@@ -17,6 +17,7 @@ public class GUI2 extends javax.swing.JFrame {
     public GUI2() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     /**
@@ -39,11 +40,12 @@ public class GUI2 extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel1.setText("Insertion Sort");
 
-        jLabel2.setText("How many values do you have to sort ");
+        jLabel2.setText("How many values do you want to sort ");
 
         jButton1.setText("SORT");
 
@@ -77,7 +79,7 @@ public class GUI2 extends javax.swing.JFrame {
                         .addGap(27, 27, 27))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
                         .addComponent(jLabel3)
                         .addGap(84, 84, 84))
                     .addGroup(layout.createSequentialGroup()
