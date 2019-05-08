@@ -1,9 +1,17 @@
 package sorts;
 
+import javax.swing.JOptionPane;
+
 public class GUI1 extends javax.swing.JFrame {
     
+    Sorts s = new Sorts();
     GUI2 gui2 = new GUI2();
     GUI3 gui3 = new GUI3();
+    GUI4 gui4 = new GUI4();
+    GUI5 gui5 = new GUI5();
+    GUI6 gui6 = new GUI6();
+    GUI7 gui7 = new GUI7();
+    GUI8 gui8 = new GUI8();
 
     public GUI1() {
         initComponents();
@@ -42,18 +50,43 @@ public class GUI1 extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton2.setText("Merge Sort");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton3.setText("Raddix Sort");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton4.setText("Shell Sort");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton5.setText("Quick Sort");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton6.setText("Quick Sort Plus");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Andres Enrique Carrillo");
 
@@ -125,13 +158,49 @@ public class GUI1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        s.cloneArray(s.array);
         gui2.setVisible(true);
+        JOptionPane.showMessageDialog(null,"The array was cloned succesfully");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
         gui3.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        s.cloneArray(s.array);
+        gui4.setVisible(true);
+        JOptionPane.showMessageDialog(null,"The array was cloned succesfully");
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        s.cloneArray(s.array);
+        gui5.setVisible(true);
+        JOptionPane.showMessageDialog(null,"The array was cloned succesfully");
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        s.cloneArray(s.array);
+        gui6.setVisible(true);
+        JOptionPane.showMessageDialog(null,"The array was cloned succesfully");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        s.cloneArray(s.array);
+        gui7.setVisible(true);
+        JOptionPane.showMessageDialog(null,"The array was cloned succesfully");
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        s.cloneArray(s.array);
+        gui8.setVisible(true);
+        JOptionPane.showMessageDialog(null,"The array was cloned succesfully");
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
