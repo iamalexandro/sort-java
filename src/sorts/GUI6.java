@@ -129,7 +129,11 @@ public class GUI6 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         int n = s.array2.length;
+        long ini = System.nanoTime();
         s.shell(s.array2);
+        long fin = System.nanoTime();
+        long total = (fin - ini);
+        jLabel4.setText(total/1e6+" ms");
         JOptionPane.showMessageDialog(null,"Data was correctly sort by Shell Sort");
         String msg="";
         for (int i = 0; i < 15; i++) {

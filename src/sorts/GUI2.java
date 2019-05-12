@@ -128,10 +128,16 @@ public class GUI2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
+        int n = s.array2.length;
+        long ini = System.nanoTime();
         s.insertionSort(s.array2);
+        long fin = System.nanoTime();
+        long total = (fin - ini);
+        jLabel4.setText(total/1e6+" ms");
+        
         JOptionPane.showMessageDialog(null,"Data was correctly sort by Insertion Sort");
         String msg="";
-        int n = s.array2.length;
         for (int i = 0; i < 15; i++) {
             msg += i+1 + ". " + s.array2[i] +"\n";
         }
